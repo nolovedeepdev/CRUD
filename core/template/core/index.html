@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Plants STORE</title>
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/shop-homepage.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href=" {% static 'css/style.css' %}">
+  <!-- CSS FROM FOOTER -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+</head>
+
+<body>
+  <!-- Navigation -->
+    <div class="site-wrap">
+
+
+    <div class="site-navbar bg-white py-2">
+
+      <div class="search-wrap">
+        <div class="container">
+          <a href="#" class="search-close js-search-close"><span class="icon-close2"></span></a>
+          <form action="#" method="post">
+            <input type="text" class="form-control" placeholder="Search keyword and hit enter...">
+          </form>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="logo">
+            <div class="site-logo">
+              <a href="index.html" class="js-logo-clone">Plants Store</a>
+            </div>
+          </div>
+          <div class="main-nav d-none d-lg-block">
+            <nav class="site-navigation text-right text-md-center" role="navigation">
+              <ul class="site-menu js-clone-nav d-none d-lg-block">
+                <li class="has-children active">
+                  <a href="index">Plants</a>
+                  <ul class="dropdown">
+                    <li><a href="index/page1">Succulents</a></li>
+                    <li><a href="index/page2">Cactus</a></li>
+                    <li><a href="index/page3">Flowers</a></li>
+                  </ul>
+                </li>
+                <li><a href="about">About/STORE</a></li>
+                <li><a href="contact">Contact</a></li>
+                <li><a href="login">Login</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-blocks-cover" data-aos="fade">
+      <div class="container">
+
+        <div class="row align-items-center">
+          <div class="col-lg-5 text-center">
+            <div class="featured-hero-product w-100">
+              <h1 class="mb-2">Plants Store</h1>
+              <h4>Succulents</h4>
+              <div class="price mt-3 mb-5"><strong>1,499</strong> <del>$1,999</del></div>
+              <p><a href="#" class="btn btn-outline-primary rounded-0">Shop Now</a> <a href="#" class="btn btn-primary rounded-0">Shop Now</a></p>
+            </div>
+          </div>
+          <div class="col-lg-7 align-self-end text-center text-lg-right">
+            <img src="{% static 'img/000.png'%}" alt="Image" class="img-fluid img-1">
+            <span class="image-photo-credit">Google Images</span><span class="image-copyright"></span></div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!--Main Navigation-->
+
+      <header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <!-- Slide One - Set the background image for this slide in the line below -->
+            <div class="carousel-item active" style="background-image: url="{% static 'img/img04.jpg'%}"">
+            <img src="{% static 'img/img01.jpg'%}" alt="Image" class="img-fluid img-1">
+
+              <div class="carousel-caption d-none d-md-block">
+                <h3 class="display-4">First Slide</h3>
+                <p class="lead">This is a description for the first slide. <br> (Image from Google Image)</p>
+              </div>
+            </div>
+            <!-- Slide Two - Set the background image for this slide in the line below -->
+            <div class="carousel-item" style="background-image: url="{% static 'img/img04.jpg'%}"">
+              <img src="{% static 'img/img02.jpg'%}" alt="Image" class="img-fluid img-1">
+              <div class="carousel-caption d-none d-md-block">
+                <h3 class="display-4">Second Slide</h3>
+                <p class="lead">This is a description for the second slide. <br> (Image from Google Image)</p>
+              </div>
+            </div>
+            <!-- Slide Three - Set the background image for this slide in the line below -->
+            <div class="carousel-item" style="background-image: url="{% static 'img/img04.jpg'%}"">
+              <img src="{% static 'img/img03.jpg'%}" alt="Image" class="img-fluid img-1">
+              <div class="carousel-caption d-none d-md-block">
+                <h3 class="display-4">Third Slide</h3>
+                <p class="lead">This is a description for the third slide. <br> (Image from Google Image)</p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+        </div>
+    </header>
+
+    <hr>
+
+  <div class="row">
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" src="{% static 'img/img04.jpg'%}" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Item One</a>
+                </h4>
+                <h5>$24.99</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! <br> (Image from Google Image)</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" src="{% static 'img/img05.jpg'%}" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Item Two</a>
+                </h4>
+                <h5>$24.99</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet. <br> (Image from Google Image)</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" src="{% static 'img/img06.jpg'%}" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Item Three</a>
+                </h4>
+                <h5>$24.99</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! <br> (Image from Google Image)</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" src="{% static 'img/img09.jpg'%}" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Item Four</a>
+                </h4>
+                <h5>$24.99</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! <br> (Image from Google Image)</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" src="{% static 'img/img10.jpg'%}" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Item Five</a>
+                </h4>
+                <h5>$24.99</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet. <br> (Image from Google Image)</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" src="{% static 'img/img11.jpg'%}" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Item Six</a>
+                </h4>
+                <h5>$24.99</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! <br> (Image from Google Image)</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+      </div>
+      <!-- /.col-lg-9 -->
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <div class="footer-white">
+        <footer class="site-footer custom-border-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+
+                <div class="block-7">
+                  <h3 class="footer-heading mb-4">About Us</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quae reiciendis distinctio voluptates sed dolorum excepturi iure eaque, aut unde.</p>
+                </div>
+                <div class="block-7">
+                  <form action="#" method="post">
+                    <label for="email_subscribe" class="footer-heading">Subscribe</label>
+                    <div class="form-group">
+                      <input type="text" class="form-control py-4" id="email_subscribe" placeholder="Email">
+                      <input type="submit" class="btn btn-sm btn-primary" value="Send">
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="col-lg-5 ml-auto mb-5 mb-lg-0">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h3 class="footer-heading mb-4">Quick Links</h3>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                    <ul class="list-unstyled">
+                      <li><a href="#">Sell online</a></li>
+                      <li><a href="#">Features</a></li>
+                      <li><a href="#">Shopping cart</a></li>
+                      <li><a href="#">Store builder</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                    <ul class="list-unstyled">
+                      <li><a href="#">Mobile commerce</a></li>
+                      <li><a href="#">Dropshipping</a></li>
+                      <li><a href="#">Website development</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                    <ul class="list-unstyled">
+                      <li><a href="#">Point of sale</a></li>
+                      <li><a href="#">Hardware</a></li>
+                      <li><a href="#">Software</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3">
+                <div class="block-5 mb-5">
+                  <h3 class="footer-heading mb-4">Contact Info</h3>
+                  <ul class="list-unstyled">
+                    <li class="address">203 Fake St. Mountain View, San Francisco, California, USA</li>
+                    <li class="phone"><a href="tel://23923929210">+2 392 3929 210</a></li>
+                    <li class="email">emailaddress@domain.com</li>
+                  </ul>
+                </div>
+
+
+              </div>
+            </div>
+            <div class="row pt-5 mt-5 text-center">
+              <div class="col-md-12">
+                <p>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</a>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'js/jquery.min.js'%}/"></script>
+  <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+
+<!--
+<span class="image-photo-credit">Karl Tapales</span><span class="image-copyright">Getty Images</span></div>
+-->
+
+</body>
+
+</html>
