@@ -1,5 +1,5 @@
 # CRUD
-A basic web application ecommerce
+A basic web application e-commerce
 
 ## Preview
 #### Index
