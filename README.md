@@ -9,5 +9,5 @@ A basic web application ecommerce
 This application use the frameworks Django 4.0, Python 3.8, Bootstrap
 
 ## Copyright and License
-Bootstrap - MIT
-CC BY 3.0. - https://creativecommons.org/licenses/by/3.0/br/
+* Bootstrap - MIT
+* CC BY 3.0. - https://creativecommons.org/licenses/by/3.0/br/
