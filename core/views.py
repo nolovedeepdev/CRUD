@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-
+from django.core.paginator import Paginator
 
 def index(request):
     return render(request, 'core/index.html')

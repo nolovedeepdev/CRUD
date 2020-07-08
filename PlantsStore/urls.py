@@ -19,11 +19,11 @@ from core.views import index, about, login, contact, page1, page2, page3
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index/', index),
-    path('index/about/', about),
-    path('index/login/', login),
-    path('index/contact/', contact),
-    path('index/page1/', page1),
-    path('page2/', page2),
-    path('page3/', page3),
+    path('index/', index, name='index'),
+    path('about/', about, name='about'),
+    path('login/', login, name='login'),
+    path('contact/', contact, name='contact'),
+    path('page1/', page1, name='page1'),
+    path('page2/', page2, name='page2'),
+    path('page3/', page3, name='page3'),
 ]

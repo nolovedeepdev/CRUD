@@ -1,208 +1,91 @@
-<!DOCTYPE html>
+{% extends 'core/index.html' %}
+
 {% load static %}
+<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>The Easiest Way to Add Input Masks to Your Forms</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Easiest Way to Add Input Masks to Your Forms</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
 
-<body>
-    <!-- Navigation -->
-    <div class="site-wrap">
+    <body>,
+    {% block content %}
 
+        <div class="site-blocks-cover" data-aos="fade">
+          <div class="container">
 
-    <div class="site-navbar bg-white py-2">
+            <div class="row align-items-center">
+              <div class="col-lg-5 text-center">
+                <div class="featured-hero-product w-100">
+                  <h1 class="mb-2">About us</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra ultrices tortor ut elementum. Proin bibendum mi orci, eget fringilla diam pretium id. Nam porttitor vehicula turpis dignissim vestibulum.</p>
+                </div>
+              </div>
+              <div class="col-lg-7 align-self-end text-center text-lg-right">
+                <img src="{% static 'img/img05.jpg'%}" alt="Image" class="img-fluid img-1">
+                <span class="image-photo-credit">Google Images</span><span class="image-copyright"></span></div>
+              </div>
 
-      <div class="search-wrap">
-        <div class="container">
-          <a href="#" class="search-close js-search-close"><span class="icon-close2"></span></a>
-          <form action="#" method="post">
-            <input type="text" class="form-control" placeholder="Search keyword and hit enter...">
-          </form>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="d-flex align-items-center justify-content-between">
-          <div class="logo">
-            <div class="site-logo">
-              <a href="index.html" class="js-logo-clone">Plants Store</a>
             </div>
           </div>
-          <div class="main-nav d-none d-lg-block">
-            <nav class="site-navigation text-right text-md-center" role="navigation">
-              <ul class="site-menu js-clone-nav d-none d-lg-block">
-                <li class="has-children active">
-                  <a href="index">Plants</a>
-                  <ul class="dropdown">
-                    <li><a href="index/page1">Succulents</a></li>
-                    <li><a href="index/page2">Cactus</a></li>
-                    <li><a href="index/page3">Flowers</a></li>
-                  </ul>
-                </li>
-                <li><a href="about">About/STORE</a></li>
-                <li><a href="contact">Contact</a></li>
-                <li><a href="login">Login</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="site-blocks-cover" data-aos="fade">
-      <div class="container">
-
-        <div class="row align-items-center">
-          <div class="col-lg-5 text-center">
-            <div class="featured-hero-product w-100">
-              <h1 class="mb-2">About us</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-            </div>
-          </div>
-          <div class="col-lg-7 align-self-end text-center text-lg-right">
-            <img src="{% static 'img/img05.jpg'%}" alt="Image" class="img-fluid img-1">
-            <span class="image-photo-credit">Google Images</span><span class="image-copyright"></span></div>
-          </div>
 
         </div>
-      </div>
+        <hr>
 
-    </div>
-    <hr>
-
-    <!-- Photo gallery -->
-    <div class="photo-gallery">
-        <div class="container">
-            <div class="row photos">
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{% static 'img/img04.jpg'%}" data-lightbox="photos"><img class="img-fluid" src="{% static 'img/img04.jpg'%}"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{% static 'img/img05.jpg'%}" data-lightbox="photos"><img class="img-fluid" src="{% static 'img/img05.jpg'%}"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{% static 'img/img06.jpg'%}" data-lightbox="photos"><img class="img-fluid" src="{% static 'img/img06.jpg'%}"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{% static 'img/img07.jpg'%}" data-lightbox="photos"><img class="img-fluid" src="{% static 'img/img07.jpg'%}"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{% static 'img/img08.jpg'%}" data-lightbox="photos"><img class="img-fluid" src="{% static 'img/img08.jpg'%}"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{% static 'img/img09.jpg'%}" data-lightbox="photos"><img class="img-fluid" src="{% static 'img/img09.jpg'%}"></a></div>
+        <!-- Photo gallery -->
+        <div class="photo-gallery">
+            <div class="container">
+                <div class="row photos">
+                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{% static 'img/img04.jpg'%}" data-lightbox="photos"><img class="img-fluid" src="{% static 'img/img04.jpg'%}"></a></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{% static 'img/img05.jpg'%}" data-lightbox="photos"><img class="img-fluid" src="{% static 'img/img05.jpg'%}"></a></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{% static 'img/img06.jpg'%}" data-lightbox="photos"><img class="img-fluid" src="{% static 'img/img06.jpg'%}"></a></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{% static 'img/img07.jpg'%}" data-lightbox="photos"><img class="img-fluid" src="{% static 'img/img07.jpg'%}"></a></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{% static 'img/img08.jpg'%}" data-lightbox="photos"><img class="img-fluid" src="{% static 'img/img08.jpg'%}"></a></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{% static 'img/img09.jpg'%}" data-lightbox="photos"><img class="img-fluid" src="{% static 'img/img09.jpg'%}"></a></div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- Script from photo gaLlery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+        <!-- Script from photo gaLlery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
 
-    </header>
-    <!--Main Navigation-->
+        </header>
+        <!--Main Navigation-->
 
-    <!--Main Layout-->
-    <main class="text-center py-5 mt-3">
+        <!--Main Layout-->
+        <main class="text-center py-5 mt-3">
 
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-
-            <p align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-              ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-              voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-          </div>
-        </div>
-      </div>
-
-    </main>
-    <!--Main Layout-->
-
-        <!-- Footer -->
-  <div class="footer-white">
-        <footer class="site-footer custom-border-top">
           <div class="container">
             <div class="row">
-              <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
-
-                <div class="block-7">
-                  <h3 class="footer-heading mb-4">About Us</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quae reiciendis distinctio voluptates sed dolorum excepturi iure eaque, aut unde.</p>
-                </div>
-                <div class="block-7">
-                  <form action="#" method="post">
-                    <label for="email_subscribe" class="footer-heading">Subscribe</label>
-                    <div class="form-group">
-                      <input type="text" class="form-control py-4" id="email_subscribe" placeholder="Email">
-                      <input type="submit" class="btn btn-sm btn-primary" value="Send">
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="col-lg-5 ml-auto mb-5 mb-lg-0">
-                <div class="row">
-                  <div class="col-md-12">
-                    <h3 class="footer-heading mb-4">Quick Links</h3>
-                  </div>
-                  <div class="col-md-6 col-lg-4">
-                    <ul class="list-unstyled">
-                      <li><a href="#">Sell online</a></li>
-                      <li><a href="#">Features</a></li>
-                      <li><a href="#">Shopping cart</a></li>
-                      <li><a href="#">Store builder</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-md-6 col-lg-4">
-                    <ul class="list-unstyled">
-                      <li><a href="#">Mobile commerce</a></li>
-                      <li><a href="#">Dropshipping</a></li>
-                      <li><a href="#">Website development</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-md-6 col-lg-4">
-                    <ul class="list-unstyled">
-                      <li><a href="#">Point of sale</a></li>
-                      <li><a href="#">Hardware</a></li>
-                      <li><a href="#">Software</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-6 col-lg-3">
-                <div class="block-5 mb-5">
-                  <h3 class="footer-heading mb-4">Contact Info</h3>
-                  <ul class="list-unstyled">
-                    <li class="address">203 Fake St. Mountain View, San Francisco, California, USA</li>
-                    <li class="phone"><a href="tel://23923929210">+2 392 3929 210</a></li>
-                    <li class="email">emailaddress@domain.com</li>
-                  </ul>
-                </div>
-
-
-              </div>
-            </div>
-            <div class="row pt-5 mt-5 text-center">
               <div class="col-md-12">
-                <p>
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</a>
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                </p>
-              </div>
 
+                <p align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                  voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+              </div>
             </div>
           </div>
-        </footer>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="{% static 'js/jquery.min.js'%}/"></script>
-  <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+        </main>
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 
-</body>
+      <!-- Bootstrap core JavaScript -->
+      <script src="{% static 'js/jquery.min.js'%}/"></script>
+      <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+
+    </body>
 
 </html>
+{% endblock content %}
